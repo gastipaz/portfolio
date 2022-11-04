@@ -1,0 +1,355 @@
+:root {
+    --primary-text-color: #D0B49F;
+    --secondary-text-color: #A47551;
+    --primary-btn-color: #E4D4C8;
+    --secondary-btn-color: #523A28;
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+@font-face {
+    font-family: prompt;
+    src: url("./fonts/Prompt-Bold.ttf");
+}
+
+.mockups-container {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-mockup {
+    height: 100%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.phone-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.laptop-mockup {
+    height: 60%;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.laptop-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.skills-container {
+    margin: 30px 0px;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+}
+
+.skills-icon {
+    color: white;
+    height: 30px;
+    width: 30px;
+    transition: transform .2s;
+}
+
+.skills-icon:hover {
+    color: var(--secondary-text-color);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.projects-btn-wrapper {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    margin: 20px 0px;
+}
+
+.projects-btn-wrapper button {
+    margin-right: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: prompt;
+    width: 100%;
+}
+
+.smallInput {
+    margin-bottom: 20px;
+    background-color: var(--primary-btn-color);
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    font-family: prompt;
+    width: 95%;
+}
+
+.bigInput {
+    width: 95%;
+    margin-bottom: 20px;
+    background-color: var(--primary-btn-color);
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 150px;
+    color: black;
+    font-family: prompt;
+}
+
+.contact-btn-wrapper {
+    align-items: center !important;
+    margin-bottom: 20px;
+}
+
+.icons {
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 20px;
+}
+
+.contactIcon {
+    color: var(--secondary-text-color);
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.contactIcon:active {
+    color: var(--primary-btn-color);
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.9);
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    height: 40vh;
+    width: 40vw;
+    margin: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.text-container {
+    position: relative;
+    z-index: 2;
+    width: 100% !important;
+    height: 25% !important;
+    margin-top: 20px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+}
+
+.home-text-wrapper {
+    position: absolute;
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+.home-title {
+    font-size: 25px !important;
+    color: var(--primary-text-color) !important; 
+}
+
+.screen-background {
+    height: 100vh !important;
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+}
+
+.background-clip {
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    z-index: 1;
+    background: #1f1e1e;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 78%, 49.9% 61.8%, 0% 78%, 0% 50%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .screen-background {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .home-title {
+        font-size: 50px !important;
+    }
+
+    .home-subtitle {
+        font-size: 40px !important;
+    }
+
+    .skills-container {
+        width: 100% !important;
+        margin-top: 50px;
+        align-items: space-around !important;
+    }
+
+    .skills-icon {
+        margin-bottom: 20px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .contactIcon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .phone-mockup {
+        height: fit-content;
+        margin: 0px 30px;
+        width: 50%;
+    }
+    
+    .phone-image {
+        width: 80%;
+        object-position: 0% 0%;
+        object-fit: contain;
+    }
+    
+    .laptop-mockup {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .laptop-image {
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .text-container {
+        width: 50% !important;
+        height: 100% !important;
+        margin-left: 70px !important;
+        justify-content: flex-start !important;
+        align-self: left !important;
+    }
+    
+    .home-text-wrapper {
+        top: 10%;
+        width: 100% !important;
+    }
+    
+    .home-title {
+        font-size: 70px !important;
+    }
+
+    .home-subtitle {
+        font-size: 40px !important;
+    }
+
+    
+    .screen-background {
+        background-position: right;
+        background-size: cover;
+        flex-direction: row !important;
+    }
+
+    .background-clip {
+        height: 100%;
+        clip-path: polygon(0% 0%, 58.4% 0%, 37.5% 76.5%, 43% 100%, 0% 100%, 0% 50%);
+    }
+    
+    @keyframes mockups {
+        from {
+            transform: translateX(-15px);
+        }
+    
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    .project-images {
+        justify-content: center !important;
+    }
+
+    .mockups-container {
+        flex-direction: row;
+    }
+    
+    .phone-mockup {
+        height: fit-content;
+        margin: 0px 30px;
+        width: 50%;
+        animation: mockups 1.7s ease-in-out 0s 1;
+    }
+    
+    .phone-image {
+        width: 50%;
+        object-position: 0% 0%;
+        object-fit: contain;
+    }
+    
+    .laptop-mockup {
+        height: 100%;
+        width: 100%;
+        animation: mockups 1.5s ease-in-out 0s 1;
+    }
+    
+    .laptop-image {
+        object-fit: cover;
+    }
+    
+    .skills-container {
+        justify-content: space-between !important;
+        flex-wrap: nowrap;
+    }
+    
+    .skills-icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .contact-btn-wrapper {
+        align-items: flex-start !important;
+    }
+
+    .contact-btn-wrapper button {
+        width: 20% !important;
+    }
+    
+    .icons {
+        justify-content: flex-start !important;
+    }
+    
+    .contactIcon {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .contactIcon:hover {
+        transform: scale(1.1);
+    }
+}
