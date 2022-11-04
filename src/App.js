@@ -1,8 +1,8 @@
 import "./App.css";
 import React, {useState} from 'react'
 import Home from './components/pages/Home';
-import Navbar from './components/navbar/Navbar';
-import Sidebar from './components/sidebar/Sidebar';
+import Navbar from './components/navigation/navbar/Navbar';
+import Sidebar from './components/navigation/sidebar/Sidebar';
 import SectionManager from "./components/pages/SectionManager";
 
 
