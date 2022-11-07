@@ -12,7 +12,7 @@ const ProjectSection = ({ project }) => {
                         <Title>{project.title}</Title>
                         <Paragraph>{project.description}</Paragraph>
                         <ElementWrapper className="projects-btn-wrapper">
-                            <a href={project.links.github} target="_blank" rel="noreferrer">
+                            <a href={project.links.demo} target="_blank" rel="noreferrer">
                                 <Button primary={true} dark={true}>Demo</Button>
                             </a>
                             <a href={project.links.github} target="_blank" rel="noreferrer">
