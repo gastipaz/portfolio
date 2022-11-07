@@ -12,8 +12,12 @@ const ProjectSection = ({ project }) => {
                         <Title>{project.title}</Title>
                         <Paragraph>{project.description}</Paragraph>
                         <ElementWrapper className="projects-btn-wrapper">
-                            <Button primary={true} dark={true}>Demo</Button>
-                            <Button primary={true} dark={true}>GitHub</Button>
+                            <a href={project.links.github} target="_blank" rel="noreferrer">
+                                <Button primary={true} dark={true}>Demo</Button>
+                            </a>
+                            <a href={project.links.github} target="_blank" rel="noreferrer">
+                                <Button primary={true} dark={true}>GitHub</Button>
+                            </a>
                         </ElementWrapper>
                     </ElementWrapper>
                 </ContentWrapper>

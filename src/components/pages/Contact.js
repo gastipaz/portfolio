@@ -36,7 +36,7 @@ function Contact({id,heading,subtitle,primary,dark,onHover,buttonLabel, alt, alt
                   <a href="https://www.linkedin.com/in/gastonpaz/" target="_blank" rel="noreferrer">
                   <FaLinkedin className="contactIcon" alt={alt2}/>
                   </a>
-                  <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/gastipaz" target="_blank" rel="noreferrer">
                   <FaGithub className="contactIcon" alt={alt3}/>
                   </a>
                   <a href="mailto:gastipaz@gmail.com" target="_blank" rel="noreferrer">
