@@ -71,9 +71,13 @@
 
 .projects-btn-wrapper {
     flex-direction: row !important;
-    text-decoration: none;
+
     justify-content: flex-start !important;
     margin: 20px 0px;
+}
+
+.projects-btn-wrapper a {
+    text-decoration: none;
 }
 
 .projects-btn-wrapper button {
